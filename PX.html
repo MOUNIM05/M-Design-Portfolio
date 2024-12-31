@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebDev Design</title>
+    <style>
+     /* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f8f9f5;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: linear-gradient(90deg, #2e8b57, #3b8072);
+    color: #fff;
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #2e8b57;
+}
+
+.cta {
+    background: #2e8b57;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cta:hover {
+    background: #3b8072;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    background: #2f4f4f;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.hero p {
+    margin: 10px 0 20px;
+    font-size: 1.2rem;
+    color: #bbb;
+}
+
+.hero .form {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.hero .form input {
+    padding: 10px;
+    margin: 0 5px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    background: #3b8072;
+}
+
+.hero .form input:focus {
+    outline: none;
+    border-color: #2e8b57;
+}
+
+.hero .form button {
+    background: #2e8b57;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero .form button:hover {
+    background: #3b8072;
+}
+
+.scroll-down {
+    margin-top: 50px;
+    font-size: 14px;
+    color: #bbb;
+}
+
+.container {
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.section {
+    margin-bottom: 3rem;
+    background-color: #d3d3d3; /* Changed to light gray background */
+    color: #333; /* Changed text color for visibility */
+    padding: 2rem; /* Added padding for spacing */
+    border-radius: 8px;
+}
+
+.section h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    border-bottom: 2px solid #333;
+    display: inline-block;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.project {
+    background: #fff;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(33% - 2rem);
+     /* Adjusted to fit 3 projects */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+    width: 100%;
+    border-radius: 6%;
+}
+
+.project h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.project p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+footer {
+    text-align: center;
+    background: linear-gradient(90deg, #2e8b57, #3b8072);
+    color: #fff;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>M-Design</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="cta" onclick="register()">Register</button>
+    </header>
+
+    <section class="hero">
+        <h1>M-Design<br>DEVELOP @ MARKETING</h1>
+        <p>Grow your business online with us</p>
+        <div class="form">
+            <input type="text" id="name" placeholder="Full Name">
+            <input type="text" id="phone" placeholder="Phone No.">
+            <input type="email" id="email" placeholder="Email">
+            <button onclick="submitForm()">Submit</button>
+        </div>
+        <p class="scroll-down">Scroll</p>
+    </section>
+
+    <div class="container">
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>Hello! I'm Ana, a passionate design student aiming to create impactful and visually stunning designs. My expertise includes graphic design, UI/UX design, and creating user-friendly interfaces. Let's bring ideas to life together!</p>
+        </section>
+        <section id="projects" class="section">
+            <h2>My Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <img src="AZ.jpg" alt="Project 1">
+                    <h3>Carpooling Website</h3>
+                    <p>Designed a user-friendly interface for a carpooling platform, focusing on personas, user flows, and wireframes.</p>
+                </div>
+                <div class="project">
+                    <img src="Page de site web copy.png" alt="Project 2">
+                    <h3>Music Streaming App</h3>
+                    <p>Conceptualized and prototyped a music app, emphasizing rap and urban music for enhanced user engagement.</p>
+                </div>
+                <div class="project">
+                    <img src="images (3).jpeg" alt="Project 3">
+                    <h3>Travel Booking Website</h3>
+                    <p>Developed an intuitive travel booking interface with a clean design to enhance user navigation and experience.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out for collaborations, freelance work, or just to say hi!</p>
+            <p>Email: abdelmounimma2005@gmail.com|
+                <br> Phone: +212 626262455</p>
+            <p>Follow me on: <a href="#">LinkedIn</a>,<a href="#">Instagram</a></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 M-Design Portfolio. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function register() {
+            alert('Register button clicked! Redirecting to the registration page...');
+            // You can redirect using: window.location.href = 'registration.html';
+        }
+
+        function submitForm() {
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const email = document.getElementById('email').value;
+
+            if (!name || !phone || !email) {
+                alert('Please fill in all fields before submitting!');
+                return;
+            }
+
+            alert(`Thank you, ${name}! We will contact you at ${email}.`);
+        }
+    </script>
+</body>
+</html>
